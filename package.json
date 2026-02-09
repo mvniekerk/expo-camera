@@ -10,8 +10,8 @@
     "clean": "expo-module clean",
     "lint": "expo-module lint",
     "test": "expo-module test",
-    "prepare": "expo-module prepare",
-    "prepublishOnly": "expo-module prepublishOnly",
+    "prepare": "expo-module prepare && tsc -p plugin",
+    "prepublishOnly": "expo-module prepublishOnly && tsc -p plugin",
     "expo-module": "expo-module"
   },
   "keywords": [
