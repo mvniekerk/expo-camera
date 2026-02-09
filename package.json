@@ -11,6 +11,7 @@
     "lint": "expo-module lint",
     "test": "expo-module test",
     "prepare": "expo-module prepare && tsc -p plugin",
+    "postinstall": "tsc -p plugin",
     "prepublishOnly": "expo-module prepublishOnly && tsc -p plugin",
     "expo-module": "expo-module"
   },
