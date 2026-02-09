@@ -55,7 +55,7 @@ export default class CameraView extends Component<CameraViewProps> {
     };
     static defaultProps: CameraViewProps;
     _cameraHandle?: number | null;
-    _cameraRef: any;
+    _cameraRef: import("react").RefObject<CameraViewRef | null>;
     _lastEvents: {
         [eventName: string]: string;
     };
@@ -130,7 +130,9 @@ export default class CameraView extends Component<CameraViewProps> {
      * @platform android
      * @platform ios
      */
-    recordAsync(options?: CameraRecordingOptions): Promise<any>;
+    recordAsync(options?: CameraRecordingOptions): Promise<{
+        uri: string;
+    } | undefined>;
     /**
      * Pauses or resumes the video recording. Only has an effect if there is an active recording. On `iOS`, this method only supported on `iOS` 18.
      *
@@ -145,7 +147,7 @@ export default class CameraView extends Component<CameraViewProps> {
      * )
      * ```
      */
-    toggleRecordingAsync(): Promise<any>;
+    toggleRecordingAsync(): Promise<void | undefined>;
     /**
      * Stops recording if any is in progress.
      * @platform android
@@ -170,6 +172,6 @@ export default class CameraView extends Component<CameraViewProps> {
         nativeEvent: any;
     }) => void;
     _setReference: (ref: Ref<CameraViewRef>) => void;
-    render(): any;
+    render(): import("react").JSX.Element;
 }
 //# sourceMappingURL=CameraView.d.ts.map

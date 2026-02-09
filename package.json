@@ -34,11 +34,18 @@
     "preset": "expo-module-scripts"
   },
   "dependencies": {
-    "invariant": "^2.2.4",
-    "expo-modules-core": "3.0.29"
+    "expo-modules-core": "3.0.29",
+    "invariant": "^2.2.4"
   },
   "devDependencies": {
-    "expo-module-scripts": "^5"
+    "@types/invariant": "^2.2.37",
+    "@types/react": "^19.2.13",
+    "@types/react-native": "^0.73.0",
+    "expo": "^54.0.33",
+    "expo-module-scripts": "^5",
+    "react": "^19.2.4",
+    "react-native": "^0.83.1",
+    "react-native-web": "^0.21.2"
   },
   "peerDependencies": {
     "expo": "*",
