@@ -1,1 +1,1 @@
-module.exports = require('./plugin/build/withCamera');
+module.exports = require('./plugin/build/withCamera').default;
